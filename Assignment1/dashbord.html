@@ -9,14 +9,18 @@
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
   <div class="container-fluid">
+
+    <!-- navigation bar  -->
     <div class="row">
-      <div class="col-12 bg-dark">
+      <div class="col-12 bg-dark ">
         <nav class="navbar navbar-expand-lg bg-dark">
           <div class="container-fluid mx-5 px-5">
             <a class="navbar-brand text-light-emphasis" href="#"><img src="./images/ru.svg" alt="" height="25px">
@@ -53,99 +57,451 @@
           </div>
         </nav>
       </div>
+    </div>
+
+
+    <div class="row bg-body-secondary">
+
+      <!-- left dashboard  -->
+      <div class="col-2">
+
+        <div class="dashbord-items border mt-4 py-2 px-3 me-2 bg-body">
+          <a class="text-dark" href="#" style="text-decoration: none"><i class="bi bi-flower1"></i> Dashboard</a>
+        </div>
+
+        <div class="dashbord-items border py-2 px-3 me-2 bg-body">
+          <a class="text-dark" href="#" style="text-decoration: none"><i class="bi bi-search-heart"></i> Applicant
+            Search</a>
+        </div>
+
+        <div class="dashbord-items border py-2 px-3 me-2 bg-body">
+          <a class="text-dark" href="#" style="text-decoration: none"><i class="bi bi-people-fill"></i> Students</a>
+        </div>
+
+        <div class="dashbord-items border py-2 px-3 me-2 bg-body">
+          <a class="text-dark" href="#" style="text-decoration: none"><i class="bi bi-currency-dollar"></i> Bills</a>
+        </div>
+
+        <div class="dashbord-items border py-2 px-3 me-2 bg-body">
+          <a class="text-dark" href="#" style="text-decoration: none"><i class="fa-solid fa-tag"></i> OTH
+            Applications</a>
+        </div>
+
+        <div class="dashbord-items border py-2 px-3 me-2 bg-body">
+          <a class="text-dark" href="#" style="text-decoration: none"><i class="bi bi-inbox-fill"></i> Complain Box</a>
+        </div>
+
+        <div class="dashbord-items border py-2 px-3 me-2 bg-body">
+          <a class="text-dark" href="#" style="text-decoration: none"><i class="bi bi-brush-fill"></i> Photo Changes</a>
+        </div>
+
+        <div class="dashbord-items border py-2 px-3 me-2 bg-body">
+          <a class="text-dark" href="#" style="text-decoration: none"><i class="fa-sharp fa-solid fa-envelope"></i> SMS
+            Sender</a>
+        </div>
+
+        <div class="dashbord-items border py-2 px-3 me-2 bg-body">
+          <a class="text-dark" href="#" style="text-decoration: none"><i class="bi bi-check-square-fill"></i> Check
+            Photos</a>
+        </div>
+
+        <div class="dashbord-items border py-2 px-3 me-2 bg-body">
+          <a class="text-dark" href="#" style="text-decoration: none"><i class="fa-sharp fa-solid fa-square-xmark"></i>
+            Rejected Photos</a>
+        </div>
+
+        <div class="dashbord-items border py-2 px-3 mb-4 me-2 bg-body">
+          <a class="text-dark" href="#" style="text-decoration: none"><i class="bi bi-download"></i> Download Quota
+            Docs.</a>
+        </div>
+
+
+
+        <!-- first up design end here -->
+
+        <div class="dashbord-items border py-2 px-3 me-2 bg-info-subtle">
+          <a class="text-dark" href="#" style="text-decoration: none">Admin</a>
+        </div>
+
+        <div class="dashbord-items border py-2 px-3 me-2 bg-body">
+          <a class="text-dark" href="#" style="text-decoration: none"><i class="bi bi-people-fill"></i> Users</a>
+        </div>
+
+        <div class="dashbord-items border py-2 px-3 me-2 bg-body">
+          <a class="text-dark" href="#" style="text-decoration: none"><i class="fa-solid fa-gears"></i> Settings</a>
+        </div>
+
+        <div class="dashbord-items border py-2 px-3 me-2 mb-4 bg-body">
+          <a class="text-dark" href="#" style="text-decoration: none"><i class="bi bi-file-earmark-diff-fill"></i> Log
+            Viewer</a>
+        </div>
+
+      </div>
+
+      <!-- right dashboard {Table}  -->
+      <div class="col-10 bg-body mt-4">
+        <!-- heading Information of table  -->
+        <div class="mt-4">
+          <p class="fs-4" style="padding: 0; margin: 0;"><i class="fa-solid fa-tag"></i> Bill Information</p>
+          <hr style="padding: 0;margin: 0%;">
+        </div>
+
+        <!-- categorey wise searchbar  -->
+        <div class="searchbar mt-4">
+          <form class="row row-cols-lg-auto g-3 align-items-center">
+            <div class="col-12">
+              <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="BIll Number">
+                <input type="text" class="form-control ms-3" id="inlineFormInputGroupUsername"
+                  placeholder="Applicant Id">
+              </div>
+
+            </div>
+
+            <div class="form">
+              <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                <option selected>Purpose</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+            <div class="form">
+              <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                <option selected>Status</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- actual table goes here  -->
+        <div class="table-information mt-2">
+          <table class="table table-striped table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Applicant</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Unit</th>
+                <th scope="col">Quota</th>
+                <th scope="col">Mobile No</th>
+                <th scope="col">Purpose</th>
+                <th scope="col">Status</th>
+                <th scope="col">Created</th>
+                <th colspan="2" scope="col">Action</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <!-- <th scope="row">1</th> -->
+                <td>100001</td>
+                <td>2905627</td>
+                <td>57</td>
+                <td>A,B,C</td>
+                <td></td>
+                <td>01786404501</td>
+                <td>E</td>
+                <td>1</td>
+                <td>2022-05-25 18:04:67</td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-solid fa-user"> </i> Details</a></td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-sharp fa-solid fa-download"></i> DL</a></td>
+              </tr>
+
+              <tr>
+                <!-- <th scope="row">1</th> -->
+                <td>100001</td>
+                <td>2905627</td>
+                <td>57</td>
+                <td>A,B,C</td>
+                <td></td>
+                <td>01786404501</td>
+                <td>E</td>
+                <td>1</td>
+                <td>2022-05-25 18:04:67</td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-solid fa-user"> </i> Details</a></td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-sharp fa-solid fa-download"></i> DL</a></td>
+              </tr>
+
+              <tr>
+                <!-- <th scope="row">1</th> -->
+                <td>100001</td>
+                <td>2905627</td>
+                <td>57</td>
+                <td>A,B,C</td>
+                <td></td>
+                <td>01786404501</td>
+                <td>E</td>
+                <td>1</td>
+                <td>2022-05-25 18:04:67</td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-solid fa-user"> </i> Details</a></td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-sharp fa-solid fa-download"></i> DL</a></td>
+              </tr>
+
+              <tr>
+                <!-- <th scope="row">1</th> -->
+                <td>100001</td>
+                <td>2905627</td>
+                <td>57</td>
+                <td>A,B,C</td>
+                <td></td>
+                <td>01786404501</td>
+                <td>E</td>
+                <td>1</td>
+                <td>2022-05-25 18:04:67</td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-solid fa-user"> </i> Details</a></td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-sharp fa-solid fa-download"></i> DL</a></td>
+              </tr>
+
+              <tr>
+                <!-- <th scope="row">1</th> -->
+                <td>100001</td>
+                <td>2905627</td>
+                <td>57</td>
+                <td>A,B,C</td>
+                <td></td>
+                <td>01786404501</td>
+                <td>E</td>
+                <td>1</td>
+                <td>2022-05-25 18:04:67</td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-solid fa-user"> </i> Details</a></td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-sharp fa-solid fa-download"></i> DL</a></td>
+              </tr>
+
+              <tr>
+                <!-- <th scope="row">1</th> -->
+                <td>100001</td>
+                <td>2905627</td>
+                <td>57</td>
+                <td>A,B,C</td>
+                <td></td>
+                <td>01786404501</td>
+                <td>E</td>
+                <td>1</td>
+                <td>2022-05-25 18:04:67</td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-solid fa-user"> </i> Details</a></td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-sharp fa-solid fa-download"></i> DL</a></td>
+              </tr>
+
+              <tr>
+                <!-- <th scope="row">1</th> -->
+                <td>100001</td>
+                <td>2905627</td>
+                <td>57</td>
+                <td>A,B,C</td>
+                <td></td>
+                <td>01786404501</td>
+                <td>E</td>
+                <td>1</td>
+                <td>2022-05-25 18:04:67</td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-solid fa-user"> </i> Details</a></td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-sharp fa-solid fa-download"></i> DL</a></td>
+              </tr>
+
+              <tr>
+                <!-- <th scope="row">1</th> -->
+                <td>100001</td>
+                <td>2905627</td>
+                <td>57</td>
+                <td>A,B,C</td>
+                <td></td>
+                <td>01786404501</td>
+                <td>E</td>
+                <td>1</td>
+                <td>2022-05-25 18:04:67</td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-solid fa-user"> </i> Details</a></td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-sharp fa-solid fa-download"></i> DL</a></td>
+              </tr>
+
+              <tr>
+                <!-- <th scope="row">1</th> -->
+                <td>100001</td>
+                <td>2905627</td>
+                <td>57</td>
+                <td>A,B,C</td>
+                <td></td>
+                <td>01786404501</td>
+                <td>E</td>
+                <td>1</td>
+                <td>2022-05-25 18:04:67</td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-solid fa-user"> </i> Details</a></td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-sharp fa-solid fa-download"></i> DL</a></td>
+              </tr>
+
+              <tr>
+                <!-- <th scope="row">1</th> -->
+                <td>100001</td>
+                <td>2905627</td>
+                <td>57</td>
+                <td>A,B,C</td>
+                <td></td>
+                <td>01786404501</td>
+                <td>E</td>
+                <td>1</td>
+                <td>2022-05-25 18:04:67</td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-solid fa-user"> </i> Details</a></td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-sharp fa-solid fa-download"></i> DL</a></td>
+              </tr>
+
+              <tr>
+                <!-- <th scope="row">1</th> -->
+                <td>100001</td>
+                <td>2905627</td>
+                <td>57</td>
+                <td>A,B,C</td>
+                <td></td>
+                <td>01786404501</td>
+                <td>E</td>
+                <td>1</td>
+                <td>2022-05-25 18:04:67</td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-solid fa-user"> </i> Details</a></td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-sharp fa-solid fa-download"></i> DL</a></td>
+              </tr>
+
+              <tr>
+                <!-- <th scope="row">1</th> -->
+                <td>100001</td>
+                <td>2905627</td>
+                <td>57</td>
+                <td>A,B,C</td>
+                <td></td>
+                <td>01786404501</td>
+                <td>E</td>
+                <td>1</td>
+                <td>2022-05-25 18:04:67</td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-solid fa-user"> </i> Details</a></td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-sharp fa-solid fa-download"></i> DL</a></td>
+              </tr>
+
+              <tr>
+                <!-- <th scope="row">1</th> -->
+                <td>100001</td>
+                <td>2905627</td>
+                <td>57</td>
+                <td>A,B,C</td>
+                <td></td>
+                <td>01786404501</td>
+                <td>E</td>
+                <td>1</td>
+                <td>2022-05-25 18:04:67</td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-solid fa-user"> </i> Details</a></td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-sharp fa-solid fa-download"></i> DL</a></td>
+              </tr>
+
+              <tr>
+                <!-- <th scope="row">1</th> -->
+                <td>100001</td>
+                <td>2905627</td>
+                <td>57</td>
+                <td>A,B,C</td>
+                <td></td>
+                <td>01786404501</td>
+                <td>E</td>
+                <td>1</td>
+                <td>2022-05-25 18:04:67</td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-solid fa-user"> </i> Details</a></td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-sharp fa-solid fa-download"></i> DL</a></td>
+              </tr>
+
+              <tr>
+                <!-- <th scope="row">1</th> -->
+                <td>100001</td>
+                <td>2905627</td>
+                <td>57</td>
+                <td>A,B,C</td>
+                <td></td>
+                <td>01786404501</td>
+                <td>E</td>
+                <td>1</td>
+                <td>2022-05-25 18:04:67</td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-solid fa-user"> </i> Details</a></td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-sharp fa-solid fa-download"></i> DL</a></td>
+              </tr>
+
+              <tr>
+                <!-- <th scope="row">1</th> -->
+                <td>100001</td>
+                <td>2905627</td>
+                <td>57</td>
+                <td>A,B,C</td>
+                <td></td>
+                <td>01786404501</td>
+                <td>E</td>
+                <td>1</td>
+                <td>2022-05-25 18:04:67</td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-solid fa-user"> </i> Details</a></td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-sharp fa-solid fa-download"></i> DL</a></td>
+              </tr>
+
+              <tr>
+                <!-- <th scope="row">1</th> -->
+                <td>100001</td>
+                <td>2905627</td>
+                <td>57</td>
+                <td>A,B,C</td>
+                <td></td>
+                <td>01786404501</td>
+                <td>E</td>
+                <td>1</td>
+                <td>2022-05-25 18:04:67</td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-solid fa-user"> </i> Details</a></td>
+                <td><a href="#" style="text-decoration: none;"><i class="fa-sharp fa-solid fa-download"></i> DL</a></td>
+              </tr>
+
+
+
+            </tbody>
+          </table>
+        </div>
+
+
+        <!-- pagination  -->
+        <div class="pagination justify-content-center sticky-bottom">
+          <nav aria-label="...">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">5</a></li>
+              <li class="page-item"><a class="page-link" href="#">6</a></li>
+              <li class="page-item"><a class="page-link" href="#">7</a></li>
+              <li class="page-item"><a class="page-link" href="#">8</a></li>
+              <li class="page-item"><a class="page-link" href="#">9</a></li>
+              <li class="page-item"><a class="page-link" href="#">10</a></li>
+              <li class="page-item"><a class="page-link" href="#">...</a></li>
+              <li class="page-item"><a class="page-link" href="#">1336</a></li>
+              <li class="page-item"><a class="page-link" href="#">1337</a></li>
+
+
+
+
+
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
   </div>
-
-
-
-
-
-  <div class="row bg-body-secondary">
-
-    <div class="col-2">
-
-      <div class="dashbord-items border mt-4 py-2 px-3 me-2 bg-body">
-        <a class = "text-dark" href="#" style = "text-decoration: none"><i class="bi bi-flower1"></i> Dashboard</a>
-      </div>
-
-      <div class="dashbord-items border py-2 px-3 me-2 bg-body">
-        <a class = "text-dark" href="#"style = "text-decoration: none"><i class="bi bi-search-heart"></i> Applicant Search</a>
-      </div>
-
-      <div class="dashbord-items border py-2 px-3 me-2 bg-body">
-        <a class = "text-dark" href="#"style = "text-decoration: none"><i class="bi bi-people-fill"></i> Students</a>
-      </div>
-
-      <div class="dashbord-items border py-2 px-3 me-2 bg-body">
-        <a class = "text-dark" href="#"style = "text-decoration: none"><i class="bi bi-currency-dollar"></i> Bills</a>
-      </div>
-
-      <div class="dashbord-items border py-2 px-3 me-2 bg-body">
-        <a class = "text-dark" href="#"style = "text-decoration: none"><i class="fa-solid fa-tag"></i> OTH Applications</a>
-      </div>
-
-      <div class="dashbord-items border py-2 px-3 me-2 bg-body">
-        <a class = "text-dark" href="#" style = "text-decoration: none"><i class="bi bi-inbox-fill"></i> Complain Box</a>
-      </div>
-
-      <div class="dashbord-items border py-2 px-3 me-2 bg-body">
-        <a class = "text-dark" href="#" style = "text-decoration: none"><i class="bi bi-brush-fill"></i> Photo Changes</a>
-      </div>
-
-      <div class="dashbord-items border py-2 px-3 me-2 bg-body">
-        <a class = "text-dark" href="#" style = "text-decoration: none"><i class="fa-sharp fa-solid fa-envelope"></i> SMS Sender</a>
-      </div>
-
-      <div class="dashbord-items border py-2 px-3 me-2 bg-body">
-        <a class = "text-dark" href="#"style = "text-decoration: none"><i class="bi bi-check-square-fill"></i> Check Photos</a>
-      </div>
-
-      <div class="dashbord-items border py-2 px-3 me-2 bg-body">
-        <a class = "text-dark" href="#"style = "text-decoration: none"><i class="fa-sharp fa-solid fa-square-xmark"></i> Rejected Photos</a>
-      </div>
-
-      <div class="dashbord-items border py-2 px-3 mb-4 me-2 bg-body">
-        <a class = "text-dark" href="#"style = "text-decoration: none"><i class="bi bi-download"></i> Download Quota Docs.</a>
-      </div>
-
-
-
-      <!-- first up design end here -->
-
-      <div class="dashbord-items border py-2 px-3 me-2 bg-info-subtle">
-        <a class = "text-dark" href="#"style = "text-decoration: none">Admin</a>
-      </div>
-
-      <div class="dashbord-items border py-2 px-3 me-2 bg-body">
-        <a class = "text-dark" href="#"style = "text-decoration: none"><i class="bi bi-people-fill"></i> Users</a>
-      </div>
-
-      <div class="dashbord-items border py-2 px-3 me-2 bg-body">
-        <a class = "text-dark" href="#"style = "text-decoration: none"><i class="fa-solid fa-gears"></i> Settings</a>
-      </div>
-
-      <div class="dashbord-items border py-2 px-3 me-2 mb-4 bg-body">
-        <a class = "text-dark" href="#"style = "text-decoration: none"><i class="bi bi-file-earmark-diff-fill"></i> Log Viewer</a>
-      </div>
-        
-    </div>
-
-
-
-
-    <div class="col-10">
-
-    </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
